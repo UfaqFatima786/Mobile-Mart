@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floral Blossom</title>
+    <link rel="icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVYjCNP2ndzOuUnCsDrg-dELcTMnWZic--oioRdAIjpw&s=10"
+        type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="Shop.css">
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+        <!-- <div class="container"> -->
+        <nav class="navbar navbar-expand-lg navUl navnav mt-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyEnyzHfBO6Z4lWZ1qtkiEHV5H6TwFTgqcXfDsLs3UaA&s=10"
+                        class="logo-1"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse mt-2" id="navbarSupportedContent">
+                    <ul class="navbar-nav navlist ms-auto mb-lg-0 gap-5">
+                        <li class="nav-item">
+                            <a class="nav-link blog" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    </div>
+
+    <div class="container">
+        <section class="shop-hero my-4">
+            <div class="container text-center">
+                <h1>Our Flower Collection</h1>
+                <p>
+                    Discover fresh bouquets and floral arrangements crafted with love for every occasion.
+                </p>
+            </div>
+        </section>
+        <section class="py-4">
+            <div class="container text-center">
+                <!-- <button class="btn category-btn active-btn">All</button>
+                <button class="btn bouquets category-btn">Bouquets</button>
+                <button class="btn category-btn">Sunflowers</button>
+                <button class="btn category-btn">Decorations</button> -->
+                <button id="allBtn" class="btn category-btn active-btn">All</button>
+                <button id="bouquetBtn" class="btn category-btn">Bouquets</button>
+                <button id="sunBtn" class="btn category-btn">Sunflowers</button>
+                <button id="decorBtn" class="btn category-btn">Decorations</button>
+            </div>
+        </section>
+        <section class="shop-products py-5">
+            <div class="container">
+                <h2 id="bouquetTitle" class="section-title text-center mb-5">
+                    Beautiful Bouquets
+                </h2>
+                <div class="row g-4 products-grid" id="productsGrid">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product-card">
+                            <span class="sale-badge">Best Seller</span>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw1Qi8zImet-tbMX_NBTMa3Nj8MKusAhNYah0eQpuyNA&s=10"
+                                class="img-fluid">
+                            <div class="product-content">
+                                <h4>Red Rose Bouquet</h4>
+                                <div class="rating">
+                                    ⭐⭐⭐⭐⭐
+                                </div>
+                                <h5>$35 <del>$45</del></h5>
+                                <div class="d-flex gap-2">
+                                    <button class="cart-btn flex-fill">
+                                        <i class="bi bi-cart-fill"></i>
+                                        Add to Cart
+                                    </button>
+                                    <button class="wish-btn">
+                                        <i class="bi bi-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product-card">
+                            <span class="sale-badge">New</span>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrLnHROI58v3_0ZYDpSB6iZSGA19D8MSDufi_VvfaFCQ&s=10"
+                                class="img-fluid">
+                            <div class="product-content">
+                                <h4>Pink Tulip Bouquet</h4>
+                                <div class="rating">
+                                    ⭐⭐⭐⭐⭐
+                                </div>
+                                <h5>$32 <del>$40</del></h5>
+                                <div class="d-flex gap-2">
+                                    <button class="cart-btn flex-fill">
+                                        <i class="bi bi-cart-fill"></i>
+                                        Add to Cart
+                                    </button>
+                                    <button class="wish-btn">
+                                        <i class="bi bi-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product-card">
+                            <span class="sale-badge">20% OFF</span>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWhrQUmLfyxnqpOrbrTi8bZXRIoIzi6NOwNnxvbFnL3g&s=10"
+                                class="img-fluid">
+                            <div class="product-content">
+                                <h4>White Lily Bouquet</h4>
+                                <div class="rating">
+                                    ⭐⭐⭐⭐⭐
+                                </div>
+                                <h5>$40 <del>$50</del></h5>
+                                <div class="d-flex gap-2">
+                                    <button class="cart-btn flex-fill">
+                                        <i class="bi bi-cart-fill"></i>
+                                        Add to Cart
+                                    </button>
+                                    <button class="wish-btn">
+                                        <i class="bi bi-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product-card">
+                            <span class="sale-badge">Popular</span>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNs9l5HQMFB2LCe7-vuQRFmVocR-O6q3eDvaKX6yntVQ&s=10"
+                                class="img-fluid">
+                            <div class="product-content">
+                                <h4>Mixed Flower Bouquet</h4>
+                                <div class="rating">
+                                    ⭐⭐⭐⭐⭐
+                                </div>
+                                <h5>$38 <del>$48</del></h5>
+                                <div class="d-flex gap-2">
+                                    <button class="cart-btn flex-fill">
+                                        <i class="bi bi-cart-fill"></i>
+                                        Add to Cart
+                                    </button>
+                                    <button class="wish-btn">
+                                        <i class="bi bi-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 id="sunflowerTitle" class="section-title text-center my-5">
+                        Sunflower Collection
+                    </h2>
+                    <div class="row g-4" id="sunflowerSection">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card">
+                                <span class="sale-badge">Best Seller</span>
+                                <img src="https://images.unsplash.com/photo-1470509037663-253afd7f0f51?w=600"
+                                    class="img-fluid">
+                                <div class="product-content">
+                                    <h4>Golden Sunflower</h4>
+                                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                                    <h5>$28 <del>$36</del></h5>
+                                    <div class="d-flex gap-2">
+                                        <button class="cart-btn flex-fill">
+                                            <i class="bi bi-cart-fill"></i> Add to Cart
+                                        </button>
+                                        <button class="wish-btn">
+                                            <i class="bi bi-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card">
+                                <span class="sale-badge">New</span>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrD2_uHFMMXUIoJIGBx8rqGXzIq1nCVOjKFTKxyljQqw&s=10"
+                                    class="img-fluid">
+                                <div class="product-content">
+                                    <h4>Sunny Bloom</h4>
+                                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                                    <h5>$30 <del>$38</del></h5>
+                                    <div class="d-flex gap-2">
+                                        <button class="cart-btn flex-fill">
+                                            <i class="bi bi-cart-fill"></i> Add to Cart
+                                        </button>
+                                        <button class="wish-btn">
+                                            <i class="bi bi-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card">
+                                <span class="sale-badge">Popular</span>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqU7Qg0L0emm0X53HOIXDWUaMF0YbmCvGoIKT4b4pqbw&s=10"
+                                    class="img-fluid">
+                                <div class="product-content">
+                                    <h4>Rustic Basket</h4>
+                                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                                    <h5>$34 <del>$42</del></h5>
+                                    <div class="d-flex gap-2">
+                                        <button class="cart-btn flex-fill">
+                                            <i class="bi bi-cart-fill"></i> Add to Cart
+                                        </button>
+                                        <button class="wish-btn">
+                                            <i class="bi bi-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card">
+                                <span class="sale-badge">20% OFF</span>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWVpDB1xfXOwjrWmJrAj8DXUWfE9Vgk59rtqUMiY581g&s=10"
+                                    class="img-fluid">
+                                <div class="product-content">
+                                    <h4>Bright Sunflowers</h4>
+                                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                                    <h5>$27 <del>$34</del></h5>
+                                    <div class="d-flex gap-2">
+                                        <button class="cart-btn flex-fill">
+                                            <i class="bi bi-cart-fill"></i> Add to Cart
+                                        </button>
+                                        <button class="wish-btn">
+                                            <i class="bi bi-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flower-decoration" id="decorSection">
+                        <h2 class="section-title text-center my-5">
+                            Flower Decorations
+                        </h2>
+                        <div class="row g-4">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="product-card">
+                                    <span class="sale-badge">Popular</span>
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCiM6FfX7yV143V65_poC_aWEQn7oUrUn_UvytzLmPHQ&s=10"
+                                        class="img-fluid">
+                                    <div class="product-content">
+                                        <h4>Wedding Stage Decor</h4>
+                                        <div class="rating">
+                                            ⭐⭐⭐⭐⭐
+                                        </div>
+                                        <h5>$180 <del>$220</del></h5>
+                                        <div class="d-flex gap-2">
+                                            <button class="cart-btn flex-fill">
+                                                <i class="bi bi-cart-fill"></i>
+                                                Book Now
+                                            </button>
+                                            <button class="wish-btn">
+                                                <i class="bi bi-heart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="product-card">
+                                    <span class="sale-badge">Best Seller</span>
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWRSOODhLPoaLRgrjnALa-lZsPJ5ZX9knumE4XJylUkw&s=10"
+                                        class="img-fluid">
+                                    <div class="product-content">
+                                        <h4>Wedding Entrance</h4>
+                                        <div class="rating">
+                                            ⭐⭐⭐⭐⭐
+                                        </div>
+                                        <h5>$140 <del>$175</del></h5>
+                                        <div class="d-flex gap-2">
+                                            <button class="cart-btn flex-fill">
+                                                <i class="bi bi-cart-fill"></i>
+                                                Book Now
+                                            </button>
+                                            <button class="wish-btn">
+                                                <i class="bi bi-heart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="product-card">
+                                    <span class="sale-badge">New</span>
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1nGi9De3xOoxQLXcdVpfvSVlV1ueC7kklhv3c1UhpdQ&s=100"
+                                        class="img-fluid">
+                                    <div class="product-content">
+                                        <h4>Table Flower Decor</h4>
+                                        <div class="rating">
+                                            ⭐⭐⭐⭐⭐
+                                        </div>
+                                        <h5>$90 <del>$120</del></h5>
+                                        <div class="d-flex gap-2">
+                                            <button class="cart-btn flex-fill">
+                                                <i class="bi bi-cart-fill"></i>
+                                                Book Now
+                                            </button>
+                                            <button class="wish-btn">
+                                                <i class="bi bi-heart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="product-card">
+                                    <span class="sale-badge">Premium</span>
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ99TWz-t-B1oyFWWWPpfHN7yUlxiY6FigM3u5Ocoikzw&s=10"
+                                        class="img-fluid">
+                                    <div class="product-content">
+                                        <h4>Birthday Decoration</h4>
+                                        <div class="rating">
+                                            ⭐⭐⭐⭐⭐
+                                        </div>
+                                        <h5>$130 <del>$160</del></h5>
+                                        <div class="d-flex gap-2">
+                                            <button class="cart-btn flex-fill">
+                                                <i class="bi bi-cart-fill"></i>
+                                                Book Now
+                                            </button>
+                                            <button class="wish-btn">
+                                                <i class="bi bi-heart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-4 mt-2">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="product-card">
+                                    <span class="sale-badge">Luxury</span>
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIqpPpeRruTosIIOLynIa84zCjMyOhBuXymAYLcGCLcw&s=10"
+                                        class="img-fluid">
+                                    <div class="product-content">
+                                        <h4>Bridal Car Decoration</h4>
+                                        <div class="rating">
+                                            ⭐⭐⭐⭐⭐
+                                        </div>
+                                        <h5>$220 <del>$260</del></h5>
+                                        <div class="d-flex gap-2">
+                                            <button class="cart-btn flex-fill">
+                                                <i class="bi bi-cart-fill"></i>
+                                                Book Now
+                                            </button>
+                                            <button class="wish-btn">
+                                                <i class="bi bi-heart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="product-card">
+                                    <span class="sale-badge">Best Seller</span>
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXylfBLF-4QT47QqmnSjAkV6mH1_zY76W-L6bc56RQdA&s=10"
+                                        class="img-fluid">
+                                    <div class="product-content">
+                                        <h4>Reception Hall Decor</h4>
+                                        <div class="rating">
+                                            ⭐⭐⭐⭐⭐
+                                        </div>
+                                        <h5>$350 <del>$420</del></h5>
+                                        <div class="d-flex gap-2">
+                                            <button class="cart-btn flex-fill">
+                                                <i class="bi bi-cart-fill"></i>
+                                                Book Now
+                                            </button>
+                                            <button class="wish-btn">
+                                                <i class="bi bi-heart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="product-card">
+                                    <span class="sale-badge">Popular</span>
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSB4LFDspU5mbSCSgYaXI3ShTuCAL6gdUNqGqB_fVi9g&s=10"
+                                        class="img-fluid">
+                                    <div class="product-content">
+                                        <h4>Anniversary Setup</h4>
+                                        <div class="rating">
+                                            ⭐⭐⭐⭐⭐
+                                        </div>
+                                        <h5>$180 <del>$220</del></h5>
+                                        <div class="d-flex gap-2">
+                                            <button class="cart-btn flex-fill">
+                                                <i class="bi bi-cart-fill"></i>
+                                                Book Now
+                                            </button>
+                                            <button class="wish-btn">
+                                                <i class="bi bi-heart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="product-card">
+                                    <span class="sale-badge">New</span>
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNySHsfL0lrIhqE_NA2-LYwNIPGh9IUstXmfGmwRx9Mg&s=10"
+                                        class="img-fluid">
+                                    <div class="product-content">
+                                        <h4>Engagement Stage Decor</h4>
+                                        <div class="rating">
+                                            ⭐⭐⭐⭐⭐
+                                        </div>
+                                        <h5>$290 <del>$340</del></h5>
+                                        <div class="d-flex gap-2">
+                                            <button class="cart-btn flex-fill">
+                                                <i class="bi bi-cart-fill"></i>
+                                                Book Now
+                                            </button>
+                                            <button class="wish-btn">
+                                                <i class="bi bi-heart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-4 mt-2">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="product-card">
+                                    <span class="sale-badge">Luxury</span>
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvLMADSr9BVP5Z3zPzO8y2RM_AbgVnAVbgbchA2MNQUA&s=10"
+                                        class="img-fluid" alt="Garden Wedding Decoration">
+                                    <div class="product-content">
+                                        <h4>Garden Wedding Decor</h4>
+                                        <div class="rating">
+                                            ⭐⭐⭐⭐⭐
+                                        </div>
+                                        <h5>$450 <del>$520</del></h5>
+                                        <div class="d-flex gap-2">
+                                            <button class="cart-btn flex-fill">
+                                                <i class="bi bi-cart-fill"></i>
+                                                Book Now
+                                            </button>
+                                            <button class="wish-btn">
+                                                <i class="bi bi-heart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="product-card">
+                                    <span class="sale-badge">Premium</span>
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ_wVasVCVi_NeztVz4QzDhfe4cGEjNrnmVtPdk2U5vQ&s=10"
+                                        class="img-fluid" alt="Home Floral Decoration">
+                                    <div class="product-content">
+                                        <h4>Home Floral Decor</h4>
+                                        <div class="rating">
+                                            ⭐⭐⭐⭐⭐
+                                        </div>
+                                        <h5>$160 <del>$210</del></h5>
+                                        <div class="d-flex gap-2">
+                                            <button class="cart-btn flex-fill">
+                                                <i class="bi bi-cart-fill"></i>
+                                                Book Now
+                                            </button>
+                                            <button class="wish-btn">
+                                                <i class="bi bi-heart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="product-card">
+                                    <span class="sale-badge">Best Seller</span>
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYDSozNgJqCoFlt65CmUMZjttF62_eiiNOO64WnZue4g&s=10"
+                                        class="img-fluid" alt="Birthday Party Decoration">
+                                    <div class="product-content">
+                                        <h4>Birthday Flower Setup</h4>
+                                        <div class="rating">
+                                            ⭐⭐⭐⭐⭐
+                                        </div>
+                                        <h5>$250 <del>$300</del></h5>
+                                        <div class="d-flex gap-2">
+                                            <button class="cart-btn flex-fill">
+                                                <i class="bi bi-cart-fill"></i>
+                                                Book Now
+                                            </button>
+                                            <button class="wish-btn">
+                                                <i class="bi bi-heart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="product-card">
+                                    <span class="sale-badge">New</span>
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh-Fb3jNU9dQFS7zs6uRY8FsFxXqPU6cHKiQIeemiklQ&s=10"
+                                        class="img-fluid" alt="Corporate Event Decoration">
+                                    <div class="product-content">
+                                        <h4>Corporate Event Decor</h4>
+                                        <div class="rating">
+                                            ⭐⭐⭐⭐⭐
+                                        </div>
+                                        <h5>$380 <del>$450</del></h5>
+                                        <div class="d-flex gap-2">
+                                            <button class="cart-btn flex-fill">
+                                                <i class="bi bi-cart-fill"></i>
+                                                Book Now
+                                            </button>
+                                            <button class="wish-btn">
+                                                <i class="bi bi-heart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h2>Floral Blossom</h2>
+                <p>
+                    Floral Blossom is dedicated to bringing beauty, elegance, and joy through fresh flowers and creative
+                    floral arrangements. From handcrafted bouquets to stunning event decorations, we create
+                    unforgettable floral experiences for every special occasion.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h2>Contact Us</h2>
+                <p>Email: u.capricorn19@.com</p>
+                <p>Phone: +92 300 1234567</p>
+                <p>Location: Karachi, Pakistan</p>
+            </div>
+            <div class="footer-col">
+                <h2>Follow Us</h2>
+                <div class="social-icons">
+                    <a href="https://github.com/UfaqFatima786" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© Floral Blossom. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
