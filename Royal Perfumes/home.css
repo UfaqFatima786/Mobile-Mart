@@ -11,7 +11,7 @@ html {
 }
 
 .navbar {
-    background: rgba(134, 81, 1, 0.527);
+    background-color: #d8a25a;
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     position: sticky;
@@ -21,13 +21,13 @@ html {
 }
 
 .nav-link {
-    color: #ffffff;
+    color: #0c0c0c;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-link:hover {
     cursor: pointer;
-    color: #ffe0c8;
+    color: #2b2928;
     transform: translateY(-2px);
 }
 
@@ -66,13 +66,96 @@ body {
     box-shadow: 0 16px 40px rgba(0,0,0,0.28);
 }
 
+.hero-card img {
+    width: 100%;
+    max-width: 650px;
+    border-radius: 20px;
+        transition: .5s ease;
+        filter: drop-shadow(0 20px 35px rgb(105, 105, 105));
+    animation: floatimg 2s ease-in-out infinite;
+}
+
+.hero-card img:hover {
+    cursor: pointer;
+    width: 100%;
+    max-width: 660px;
+    border-radius: 20px;
+        transform: scale(1.08) rotate(4deg);
+    animation: floatimg 2s ease-in-out infinite;
+        filter: drop-shadow(0 20px 35px rgb(255, 255, 255));
+}
+
+.img img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: auto;
+    animation: floatPizza 2s ease-in-out infinite;
+    transition: .5s ease;
+}
+
+@keyframes floatimg {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
 .section-title {
     font-size: 1.7rem;
     font-weight: 700;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .section-subtitle {
+        text-align: center;
     color: #c8b7a2;
     margin-bottom: 24px;
 }
@@ -113,6 +196,7 @@ body {
 }
 
 .mini-pill {
+    text-align: center;
     display: inline-block;
     padding: 7px 12px;
     border-radius: 999px;
@@ -191,6 +275,9 @@ body {
 @media (max-width: 900px) {
     .footer-container {
         grid-template-columns: 1fr 1fr;
+    }
+    .navbar{
+        text-align: center;
     }
 }
 
