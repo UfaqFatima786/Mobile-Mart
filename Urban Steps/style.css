@@ -56,11 +56,10 @@ body {
 }
 
 .left-section h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 800;
     /* margin-bottom: 15px; */
     color: #015326;
-    margin-left: 40px;
 }
 
 .left-section h3 {

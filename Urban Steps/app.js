@@ -6,7 +6,7 @@ let tween = gsap.to("#heading", {
 })
 
 gsap.to("#simpleheading", {
-    text: { value: "Crafted for those who appreciate luxury and individuality." },
+    text: { value: "" },
     duration: 4,
     delay: 5,
     ease: "none"
